@@ -74,7 +74,7 @@ main img {
 .blue-background {
     height: 100vh;
     background-image: url("../img/laranja\ azul\ recorte.png");
-    background-position:center;
+    background-position:right;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,5 +181,27 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    
+    /*HEADER*/
+    .header-container nav {
+        display: none;
+    }
+
+    /*MAIN*/
+    .blue-background {
+        background-position: 75% 25%;
+    }
+    .sub-row {
+        flex-direction: column;
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: white;
+    }
+    .icons-container {
+        width: 100%;
+        padding: 2% 0 2% 0;
+        justify-content: space-evenly;
+        background-color: lightblue;
+    }
 }
