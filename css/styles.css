@@ -72,7 +72,7 @@ main img {
 /*MAIN.1 - .blue-background*/
 
 .blue-background {
-    height: 100vh;
+    height: 95vh;
     background-image: url("../img/laranja\ azul\ recorte.png");
     background-position:right;
     display: flex;
@@ -81,10 +81,17 @@ main img {
     width: 100%;
 }
 
+.text-position {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-self: center;
+    max-width: 1600px;
+}
+
 .blue-background h2, .blue-background p {
     width: 80%;
     max-width: 1600px;
-    align-self: center;
     color: white;
 }
 
@@ -96,6 +103,14 @@ main img {
 
 .blue-background p {
     font-weight: 300;
+    transition: 0.5s;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.blue-background p:hover {
+    transform: scale(1.1);
+    border-bottom: 1px solid white;
 }
 
 /*MAIN.2 - .img-matrix*/
@@ -180,7 +195,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     /*HEADER*/
     .header-container nav {
         display: none;
