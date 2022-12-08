@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+html {
+    font-size: calc(15px + 0.390625vw); /*REM*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/*HEADER AND ITS CHILDREN*/
+
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 0 1% 0;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+
+.header-container {
+    width: 80%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container nav {
+    width: 50%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-list li {
+    list-style: none;
+    transition: 0.5s;
+}
+
+
+.nav-list li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*MAIN*/
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*MAIN.1 - .blue-background*/
+
+.blue-background {
+    height: 100vh;
+    background-image: url("../img/laranja\ azul\ recorte.png");
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.blue-background h2, .blue-background p {
+    width: 80%;
+    max-width: 1600px;
+    align-self: center;
+    color: white;
+}
+
+.blue-background h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+
+.blue-background p {
+    font-weight: 300;
+}
+
+/*MAIN.2 - .img-matrix*/
+
+.img-matrix {
+    width: 80%;
+    max-width: 1600px;
+    padding: 1% 0 1% 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.row-large-screen {
+    display: flex;
+    width: 100%;
+    gap: 1%;
+    margin-bottom: 1%;
+}
+
+.sub-row {
+    display: flex;
+    gap: 2%;
+}
+
+.img-matrix img {
+    transition: .5s;
+}
+
+.img-matrix img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    padding: 2% 0 2% 0;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container p {
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.icons-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons-container ion-icon {
+    font-size: 1.7rem;
+}
+
+.icons-container ion-icon:hover {
+    cursor: pointer;
+}
