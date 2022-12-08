@@ -163,3 +163,23 @@ footer {
 .icons-container ion-icon:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .header-container nav {
+        margin-top: 1%;
+        width: 100%;
+    }
+    .row-large-screen {
+        flex-direction: column;
+    }
+    .sub-row {
+        margin-bottom: 2%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
