@@ -65,6 +65,10 @@ main {
     justify-content: center;
 }
 
+main img {
+    margin: 1%;
+}
+
 /*MAIN.1 - .blue-background*/
 
 .blue-background {
@@ -110,13 +114,10 @@ main {
 .row-large-screen {
     display: flex;
     width: 100%;
-    gap: 1%;
-    margin-bottom: 1%;
 }
 
 .sub-row {
     display: flex;
-    gap: 2%;
 }
 
 .img-matrix img {
@@ -169,17 +170,16 @@ footer {
         flex-direction: column;
     }
     .header-container nav {
-        margin-top: 1%;
         width: 100%;
     }
     .row-large-screen {
         flex-direction: column;
     }
-    .sub-row {
-        margin-bottom: 2%;
-    }
-
     .footer-container {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 600px) {
+    
 }
