@@ -8,6 +8,7 @@
 html {
     font-size: calc(15px + 0.390625vw); /*REM*/
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .active {
@@ -198,7 +199,7 @@ footer {
     cursor: pointer;
 }
 
-footer a {
+footer a { /*Topo link*/
     font-size: 1rem;
     display: none;
     text-decoration: none;
@@ -206,6 +207,7 @@ footer a {
     background-color: rgb(84, 84, 84);
     text-align: center;
     padding: 2%;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 900px) {
@@ -267,7 +269,18 @@ footer a {
         justify-content: space-evenly;
         background-color: lightblue;
     }
-    footer a {
+    .p-container {
         display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .text-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer a {
+        display: block;
     }
 }
