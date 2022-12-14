@@ -118,6 +118,17 @@ main {
     font-weight: bold;
     font-size: 3rem;
     margin-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rotate {
+    transition: .5s;
+}
+
+.rotate:hover {
+    cursor: pointer;
+    transform: rotate(360deg)
 }
 
 .blue-background p {
